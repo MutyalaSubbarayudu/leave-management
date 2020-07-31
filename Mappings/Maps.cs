@@ -12,8 +12,7 @@ namespace leave_management.Mappings
     {
         public Maps()
         {
-            CreateMap<LeaveType, DetailsLeaveTypeViewModel>().ReverseMap(); // can send data in both directions
-            CreateMap<LeaveType, CreateLeaveTypeViewModel>().ReverseMap();
+            CreateMap<LeaveType, LeaveTypeViewModel>().ReverseMap(); // can send data in both directions
 
             CreateMap<LeaveHistory, LeaveHistoryViewModel>().ReverseMap();
 

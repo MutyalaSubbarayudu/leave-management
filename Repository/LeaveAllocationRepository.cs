@@ -40,6 +40,12 @@ namespace leave_management.Repository
             return leaveAllocation;
         }
 
+        public bool isExists(int id)
+        {
+            var exists = _db.LeaveAllocations.Any(x => x.Id == id);
+            return exists;
+        }
+
         public bool Save()
         {
             var changes = _db.SaveChanges(); // says how many row affected, so it returns something > 0

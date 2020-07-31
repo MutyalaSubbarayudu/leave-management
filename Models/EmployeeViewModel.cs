@@ -18,6 +18,6 @@ namespace leave_management.Models
 
         public DateTime DateJoined { get; set; }
 
-        public DateTime DateCreated { get; set; }
+        public DateTime DateCreated { get; set; } 
     }
 }
