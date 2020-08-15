@@ -10,7 +10,7 @@ namespace leave_management.Data
     public class Employee : IdentityUser // refers to table - AspnetUsers
     {
         public string FirstName { get; set; }
-        public string Lastname { get; set; }
+        public string LastName { get; set; }
 
         public string TaxId { get; set; }
 
